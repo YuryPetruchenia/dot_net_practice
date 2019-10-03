@@ -29,7 +29,26 @@ namespace ConsoleApp1
                 }
             }
 
-            Task2();
+            void Task3 ()
+            {
+                int[] ar = new int[13];
+                Random rand = new Random();
+                for (int i = 0; i < ar.Length; i++)
+                    ar[i] = rand.Next();
+
+                foreach (var item in ar)
+                {
+                    Console.WriteLine(item);
+                }
+
+                Array.Sort(ar);
+                Console.WriteLine("Max velue");
+                Console.WriteLine(ar[12]);
+            }
+
+            
+
+            
         }
     }
 }
