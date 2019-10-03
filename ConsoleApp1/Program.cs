@@ -19,7 +19,17 @@ namespace ConsoleApp1
                     Console.WriteLine(item);
                 }
 
+                array[0] = (int)array[0] + 10;
+
+                array[2] = array[2] + ",guys!";
+
+                foreach (var item in array)
+                {
+                    Console.WriteLine(item);
+                }
             }
+
+            Task2();
         }
     }
 }
