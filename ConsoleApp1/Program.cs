@@ -6,9 +6,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            void CrArray()
+            void Tack1 ()
             {
                 int[] array = new int[3];
+            }
+
+            void Task2 ()
+            {
+                object [] array = { 32, 'A', "Hello"};
+                foreach (var item in array)
+                {
+                    Console.WriteLine(item);
+                }
 
             }
         }
