@@ -45,10 +45,21 @@ namespace ConsoleApp1
                 Console.WriteLine("Max velue");
                 Console.WriteLine(ar[12]);
             }
-
             
+            void Task4 ()
+            {
+                short box = 0;
+                object obj = box; //Boxing
+                SByte unboxing = (SByte)(short) obj; //Unboxing
+                Console.WriteLine(unboxing);
+                Console.WriteLine(unboxing.GetType());
 
-            
+            }
+            Task2();
+
+            Task3();
+
+            Task4();
         }
     }
 }
