@@ -7,12 +7,18 @@ namespace L13_Task1
                 
         static void Main(string[] args)
         {
+            Song song1 = new Song();
+            song1.Name = "David Bowei - Heroes";
+            song1.Length = 210;
+            song1.Autor = "David Bowie";
+            song1.Date = 1960;
+
             var song = new
             {
-                name = "david bowie",
-                length = 200,
-                autor = "david bowie",
-                date = 1960
+                name = song1.Name,
+                length = song1.Length,
+                autor = song1.Autor,
+                date = song1.Date
             };
             void GetSongData()
             {
